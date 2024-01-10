@@ -2,36 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div itemscope itemtype="https://schema.org/Organization">
-        <span itemprop="name">.SD & Gaming CoE ,ITI</span>
-       <span itemprop="telephone">35355695</span>
-       <span itemprop="url">http://www.iti.gov.eg</span>
-        <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-          <span itemprop="streetAddress">
-            km 28 Cairo-Alexandria Desert Road
-          </span>
-          <span itemprop="addressLocality">Smart Village</span>,
-          <span itemprop="addressRegion">Giza</span>
-          <span itemprop="postalCode">11371</span>
-        </div>
-        <div itemscope itemtype="https://schema.org/Place">
-            <div itemprop="GeoCoordinates" itemscope itemtype="https://schema.org/GeoCoordinates">
-              <meta itemprop="latitude" content="38.5323" />
-              <meta itemprop="longitude" content="77.0040" />
-            </div>
-          </div>
+  <div itemscope itemtype="https://schema.org/Organization">
+    <span itemprop="name">.SD & Gaming CoE ,ITI</span>
+    <span itemprop="telephone">35355695</span>
+    <span itemprop="url">http://www.iti.gov.eg</span>
+    <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="streetAddress">
+        km 28 Cairo-Alexandria Desert Road
+      </span>
+      <span itemprop="addressLocality">Smart Village</span>,
+      <span itemprop="addressRegion">Giza</span>
+      <span itemprop="addressCountry">egypt</span>
+      <span itemprop="postalCode">11371</span>
+    </div>
+    <div itemscope itemtype="https://schema.org/Place">
+      <div itemprop="Geo" itemscope itemtype="https://schema.org/GeoCoordinates">
+        <meta itemprop="latitude" id="latitude" content="" />
+        <meta itemprop="longitude" id="longitude" content="" />
       </div>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/main.js"></script>
+    </div>
+  </div>
+  <div>
+    <h1>get location</h1>
+
+    <button onclick="openCurrentLocation()">openCurrentLocation</button>
+    <button onclick="closeCurrentLocation()">closeCurrentLocation</button>
+  </div>
+  <div id="img"> <img src="hero-img.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minus distinctio, libero nesciunt iure numquam
+      incidunt tempore nemo veniam beatae velit facilis! Vero, ducimus soluta. Beatae libero quibusdam neque ipsam.</p>
+  </div>
+  <h2>Web Worker</h2>
+    <button id="sum">calc sum</button>
+    <button id="bg">change bg</button>
+  <script src="main.js"></script>
+  <script src="worker.js"></script>
 </body>
 
 </html>

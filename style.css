@@ -1,0 +1,58 @@
+span {
+    display: block;
+}
+
+button {
+    border: none;
+    transition: all 1s;
+}
+
+button:hover {
+    /* background-color: aqua; */
+    animation: identifier 1s ease-in infinite;
+}
+
+@keyframes identifier {
+    0% {
+        background-color: aqua;
+    }
+
+    25% {
+        background-color: brown;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    }
+
+}
+
+#img {position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    transition: all 3s;
+    
+}
+img:hover ,img:hover+p{opacity: 0;}
+
+p {    transition: all 3s;
+
+    color: #000;
+    position: absolute;
+right: 0; left: 0;    bottom: 0;
+    text-align: center;
+
+    text-shadow: 1px 1px 10px red;
+}
